@@ -18,35 +18,46 @@ Submit the following file(s) as one submission to the assignment drop box in D2L
 
 ## Repository Structure
 
-The project folders are organized to match the main phases of our Software Development Life Cycle (SDLC). This structure will help you keep your work organized and ensure that you are following the SDLC process effectively. Each folder contains specific files related to that phase of development, as outlined below:
+### Project Files
+
+The project folders and files are organized to match the main phases of our Software Development Life Cycle (SDLC). This structure will help you keep your work organized and ensure that you are following the SDLC process effectively. Each folder contains specific files related to that phase of development, as outlined below:
 
 ```text
-it140_00_{{project_name}}/  # Main project folder for this IT-140 activity
+it140_00_{{project_name}}/
 │
-├── .github/             # GitHub configuration files (ignore; do NOT modify)
-│   └── workflows/       # GitHub Actions workflow files
-│       └── tests.yml    # Automatically runs linting and unit tests
+├── README.md            # Start here: project overview, directions, and submission notes
 │
-├── analysis/            # Analysis phase
+├── analysis/            # 1. Analysis phase: understand the problem
 │   ├── requirements.md  # Program requirements and sample input/output
-│   └── test_cases.md    # Test cases for the program
+│   └── test_cases.md    # Planned acceptance test cases for the program
 │
-├── design/              # Design phase
+├── design/              # 2. Design phase: plan the solution
 │   ├── design.md        # Program design and SDD notes
 │   ├── flowchart.dio    # Visual outline of program logic
-│   └── main.pseudo      # Detailed, step-by-step logic before coding
+│   └── main.pseudo      # Step-by-step logic before coding
 │
-├── src/                 # Implementation phase
-│   └── main.py          # Main Python source code file for the program
+├── src/                 # 3. Implementation phase: write the code
+│   └── main.py          # Main Python source code file
 │
-├── tests/               # Testing and deployment phase
+├── tests/               # 4. Testing phase: check the code
 │   ├── acceptance.md    # Checklist for meeting requirements
-│   └── test_main.py     # Test file used to check expected program behavior
+│   └── test_main.py     # Automated unit tests
 │
-├── working/             # Planning notes and progress tracking
-│   ├── todo_list.md     # Your to-do list for this activity
-│   └── worksheet.md     # Your development worksheet
+└── working/             # Planning notes and progress tracking
+    ├── todo_list.md     # To-do list for this activity
+    └── worksheet.md     # Development worksheet
+```
+
+### Support Files
+
+This repository also includes support files for project management, code quality, and automated testing. These files are essential for maintaining a well-organized and high-quality codebase, but they are not meant to be modified by students. They include configuration for GitHub Actions to run automated tests and linting, as well as settings for the Ruff linter to enforce code style and quality standards.
+
+```text
+it140_00_{{project_name}}/
 │
-├── pyproject.toml       # Python project settings (ignore; do NOT modify)
-└── README.md            # Project overview and directions
+├── .github/
+│   └── workflows/
+│       └── tests.yml    # Runs automated linting and unit tests in GitHub Actions
+│
+└── pyproject.toml       # Python project settings, including Ruff linter rules
 ```

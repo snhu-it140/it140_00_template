@@ -23,6 +23,10 @@ The project folders are organized to match the main phases of our Software Devel
 ```text
 it140_00_{{project_name}}/  # Main project folder for this IT-140 activity
 │
+├── .github/             # GitHub configuration files (ignore; do NOT modify)
+│   └── workflows/       # GitHub Actions workflow files
+│       └── tests.yml    # Automatically runs linting and unit tests
+│
 ├── analysis/            # Analysis phase
 │   ├── requirements.md  # Program requirements and sample input/output
 │   └── test_cases.md    # Test cases for the program
@@ -36,14 +40,13 @@ it140_00_{{project_name}}/  # Main project folder for this IT-140 activity
 │   └── main.py          # Main Python source code file for the program
 │
 ├── tests/               # Testing and deployment phase
-│   ├── test_main.py     # Test file used to check expected program behavior
-│   └── acceptance.md    # Checklist for meeting requirements
+│   ├── acceptance.md    # Checklist for meeting requirements
+│   └── test_main.py     # Test file used to check expected program behavior
 │
 ├── working/             # Planning notes and progress tracking
 │   ├── todo_list.md     # Your to-do list for this activity
 │   └── worksheet.md     # Your development worksheet
 │
+├── pyproject.toml       # Python project settings (ignore; do NOT modify)
 └── README.md            # Project overview and directions
 ```
-
-*Note*. Ignore directories and files that start with a dot (`.`)as these are for version control and development environment settings, not part of the SDLC.

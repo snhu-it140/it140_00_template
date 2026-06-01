@@ -30,6 +30,7 @@
         "Spyder",
         "spyderproject",
         "spyproject",
-        "webassets"
+        "webassets",
+        "winget"
     ]
 }

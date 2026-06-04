@@ -50,14 +50,16 @@ it140_00_{{project_name}}/
 
 ### Support Files
 
-This repository also includes support files for project management, code quality, and automated testing. These files are essential for maintaining a well-organized and high-quality codebase, but they are not meant to be modified by students. They include configuration for GitHub Actions to run automated tests and linting, as well as settings for the Ruff linter to enforce code style and quality standards.
+This repository may also included support files for project management, code quality, and automated testing. These files are essential for maintaining a well-organized and high-quality codebase, but they are not meant to be modified by students.
 
 ```text
 it140_00_{{project_name}}/
 │
-├── .github/
-│   └── workflows/
-│       └── tests.yml    # Runs automated linting and unit tests in GitHub Actions
-│
+├── .github/             # GitHub workflows for automated testing and linting
+├── .guides/             # Codio assignment guides
+├── .idea/               # IntelliJ IDEA project settings
+├── .vscode/             # VS Code settings and configurations
+├── .codio               # Codio project settings
+├── .settings            # Codio IDE and editor settings
 └── pyproject.toml       # Python project settings, including Ruff linter rules
 ```
